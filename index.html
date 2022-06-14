@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Envato</title>
+</head>
+<body>
+    <nav >
+        <div id="html" class="container-nav topnav">
+            <div class="nav-left">
+                <a href="#">
+                    <img class="nav-logo" src="http://www.mrare.co/envato.png" alt="">
+                </a>
+                <div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                </div>
+            </div>
+            <div  class="nav-right">
+                <ul id="myLinks" class="nav-right-ul">
+                    <li class="nav-right-li"><a class="nav-right-a" href="#goEventDetails">EVENT DETAİLS</a></li>
+                    <li class="nav-right-li"><a class="nav-right-a" href="#goSpeakers">SPEAKERS</a></li>
+                    <li class="nav-right-li"><a class="nav-right-a" href="#goSponsors">SPONSORS</a></li>
+                    <li class="nav-right-li"><a class="nav-right-a" href="#goPastEvents">PAST EVENTS</a></li>
+                    <li class="nav-right-li"><a class="nav-right-a" href="#goContact">CONTACT</a></li>
+                </ul>
+            </div>
+           
+        </div>
+
+        <div class="container-countdown">
+            <div id="demo" class="countdown">
+                <div class="day">
+                    <h2 id="day"></h2>
+                    <p>DAYS</p>
+                </div>
+                <div class="hours">
+                    <h2 id="hours"></h2>
+                    <p>HOURS</p>
+                </div>
+                <div class="minutes">
+                    <h2 id="minutes"></h2>
+                    <p>MİNUTES</p>
+                </div>
+                <div class="seconds">
+                    <h2 id="seconds"></h2>
+                    <p>SECONDS</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="emoji-container">
+            <div class="img1">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
+                <circle style="fill:#FFDB6C;" cx="247.796" cy="255.997" r="247.796"/>
+                <path style="fill:#FCC56B;" d="M300.895,467.216c-136.853,0-247.794-110.941-247.794-247.794c0-73.116,31.673-138.825,82.04-184.181
+                C54.919,76.258,0,159.716,0,256.003c0,136.853,110.941,247.794,247.794,247.794c63.738,0,121.848-24.073,165.754-63.612
+                C379.75,457.466,341.462,467.216,300.895,467.216z"/>
+                <g>
+                <path style="fill:#F9A880;" d="M141.308,259.555c-18.402,0-33.321,14.918-33.321,33.32h66.641
+                C174.628,274.473,159.71,259.555,141.308,259.555z"/>
+                <path style="fill:#F9A880;" d="M431.948,259.555c-18.402,0-33.321,14.918-33.321,33.32h66.641
+                C465.269,274.473,450.349,259.555,431.948,259.555z"/>
+                </g>
+                <path style="fill:#56586F;" d="M105.165,121.895c64.702-14.849,117.079-9.739,175.098,3.782c8.604,2.004,17.692,4.239,27.29,4.532
+                c15.985,0.489,33.956-3.489,49.449-7.382c61.168-15.366,108.95-7.374,154.996,2.465l-3.402,27.211
+                c-7.188,0.159-9.449,3.511-11.503,10.054c-10.747,34.242-1.594,93.16-81.048,86.233c-52.27-4.558-67.239-18.879-92.152-81.847
+                c-2.12-5.356-3.497-14.207-15.602-13.88c-6.835,0.184-12.948,1.392-15.079,13.267c-3.973,22.126-34.188,82.245-95.535,82.179
+                c-54.185-0.058-74.855-28.184-77.323-90.159c-0.306-7.695-7.012-9.156-11.035-9.246L105.165,121.895L105.165,121.895z"/>
+                <g>
+                <path style="fill:#737891;" d="M199.128,113.331l-37.84,129.044c9.958,4.097,21.979,6.12,36.392,6.134
+                c0.254,0,0.504-0.009,0.758-0.011l38.499-131.292C224.347,115.304,211.809,113.972,199.128,113.331z"/>
+                <path style="fill:#737891;" d="M434.438,114.376c-12.593-0.403-25.665,0-39.395,1.534l-33.781,115.202
+                c9.238,7.758,20.144,12.263,34.543,15.016L434.438,114.376z"/>
+                </g>
+                <path style="fill:#7F184C;" d="M299.414,437.536L299.414,437.536c-55.395,0-100.302-44.907-100.302-100.302l0,0h200.605l0,0
+                C399.716,392.629,354.81,437.536,299.414,437.536z"/>
+                <path style="fill:#F2F2F2;" d="M223.585,337.234v15.657c0,6.602,5.352,11.953,11.953,11.953h127.751
+                c6.602,0,11.953-5.352,11.953-11.953v-15.657H223.585z"/>
+                <path style="fill:#FC4C59;" d="M301.52,395.923c-27.113-12.597-57.2-10.766-81.598,2.298c18.333,23.895,47.164,39.315,79.609,39.315
+                l0,0c14.298,0,27.886-3.012,40.195-8.403C330.695,415.16,317.747,403.464,301.52,395.923z"/>
+                <ellipse transform="matrix(0.2723 -0.9622 0.9622 0.2723 149.2661 353.8707)" style="fill:#FCEB88;" cx="308.589" cy="78.25" rx="28.897" ry="51.747"/>
+                <g>
+    
+                </svg>
+            </div>
+    
+            <div class="img2">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 512.003 512.003" style="enable-background:new 0 0 512.003 512.003;" xml:space="preserve">
+                <circle style="fill:#FDDF6D;" cx="256.001" cy="256.001" r="256.001"/>
+                <path style="fill:#FCC56B;" d="M310.859,474.208c-141.385,0-256-114.615-256-256c0-75.537,32.722-143.422,84.757-190.281
+                C56.738,70.303,0,156.525,0,256c0,141.385,114.615,256,256,256c65.849,0,125.883-24.87,171.243-65.718
+                    C392.325,464.135,352.77,474.208,310.859,474.208z"/>
+                <g>
+                <circle style="fill:#7F184C;" cx="317.766" cy="365.603" r="48.809"/>
+                <path style="fill:#7F184C;" d="M444.125,276.273c-38.672,0-83.563-26.436-92.515-72.017c-3.991-20.317-0.514-42.848,9.538-61.82
+                c11.113-20.973,28.787-34.988,49.766-39.461c21.858-4.662,46.369,1.136,65.565,15.504c16.584,12.411,26.471,29.205,27.843,47.286
+                c1.344,17.737-5.85,37.091-19.247,51.77c-12.171,13.336-28.008,21.125-43.452,21.366c-17.434,0.219-35.02-8.558-45.992-23.041
+                c-3.628-4.792-15.126-22.084-10.749-43.463c0.854-4.173,3.122-15.259,13.082-24.034c10.145-8.934,21.945-9.923,26.65-9.923
+                c0.032,0,0.064,0,0.096,0c22.934,0.071,40.105,17.519,41.756,33.771c0.19,1.862,1.473,18.447-11.628,27.125
+                c-7.454,4.939-19.131,6.854-28.413,0c-7.304-5.396-10.934-14.919-9.248-24.262c1.022-5.661,6.438-9.416,12.099-8.4
+                c5.66,1.022,9.42,6.439,8.398,12.099c-0.283,1.57,0.168,3.101,1.125,3.806c1.1,0.815,3.38,0.157,4.535-0.608
+                c2.406-1.594,2.509-6.481,2.405-7.701c-0.75-7.378-11.396-14.972-21.091-15.002c-0.013,0-0.026,0-0.04,0
+                c-1.815,0-7.914,0.353-12.876,4.724c-4.72,4.157-5.842,9.634-6.443,12.578c-2.69,13.14,5.316,24.557,6.947,26.712
+                c6.932,9.151,18.317,14.939,29.062,14.789c9.726-0.151,20.075-5.467,28.391-14.58c9.599-10.519,14.783-24.035,13.864-36.153
+                c-0.91-11.999-7.854-23.428-19.554-32.186c-14.24-10.657-32.918-15.183-48.742-11.809c-14.847,3.165-27.528,13.408-35.704,28.843
+                c-7.74,14.609-10.545,32.572-7.504,48.054c3.235,16.474,13.411,31.224,28.651,41.536c14.243,9.634,31.524,14.559,47.408,13.539
+                c5.746-0.371,10.695,3.978,11.067,9.719c0.372,5.739-3.978,10.694-9.719,11.067C447.698,276.217,445.915,276.273,444.125,276.273z"
+                />
+                <path style="fill:#7F184C;" d="M251.483,276.273c-38.672,0-83.564-26.436-92.515-72.017c-3.989-20.317-0.514-42.848,9.538-61.82
+                c11.113-20.975,28.787-34.988,49.767-39.461c21.858-4.662,46.369,1.136,65.565,15.504c16.583,12.413,26.471,29.205,27.841,47.286
+                c1.346,17.737-5.85,37.089-19.246,51.768c-12.172,13.337-28.009,21.126-43.452,21.368c-17.376,0.253-35.02-8.558-45.992-23.041
+                c-3.628-4.789-15.126-22.077-10.749-43.463c0.854-4.176,3.124-15.262,13.082-24.034c10.146-8.934,21.945-9.923,26.65-9.923
+                c0.032,0,0.064,0,0.096,0c22.934,0.071,40.105,17.519,41.756,33.771c0.19,1.862,1.473,18.446-11.627,27.125
+                c-7.455,4.941-19.133,6.855-28.415,0c-7.304-5.396-10.935-14.918-9.248-24.262c1.022-5.661,6.439-9.416,12.099-8.4
+                c5.66,1.022,9.42,6.439,8.398,12.099c-0.283,1.57,0.168,3.099,1.125,3.806c1.101,0.812,3.381,0.156,4.537-0.608
+                c2.406-1.594,2.508-6.481,2.404-7.701c-0.75-7.378-11.396-14.972-21.091-15.002c-1.755,0.049-7.916,0.318-12.917,4.724
+                c-4.718,4.156-5.84,9.634-6.443,12.579c-2.69,13.143,5.316,24.556,6.947,26.708c6.932,9.154,18.304,14.941,29.062,14.791
+                c9.726-0.151,20.075-5.467,28.393-14.582c9.599-10.517,14.782-24.034,13.862-36.152c-0.91-11.999-7.854-23.428-19.553-32.186
+                c-14.24-10.657-32.918-15.183-48.742-11.809c-14.847,3.165-27.528,13.408-35.704,28.843c-7.74,14.609-10.545,32.572-7.505,48.054
+                c3.235,16.474,13.411,31.224,28.651,41.536c14.243,9.634,31.528,14.571,47.408,13.539c5.743-0.371,10.694,3.978,11.067,9.719
+                c0.372,5.739-3.978,10.694-9.719,11.067C255.056,276.217,253.273,276.273,251.483,276.273z"/>
+                </g>
+                <ellipse transform="matrix(0.2723 -0.9622 0.9622 0.2723 151.7603 349.5912)" style="fill:#FCEB88;" cx="307.007" cy="74.462" rx="29.854" ry="53.46"/>
+                </svg>
+            </div>
+            <div class="img3">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 512.003 512.003" style="enable-background:new 0 0 512.003 512.003;" xml:space="preserve">
+                <circle style="fill:#FDDF6D;" cx="256.001" cy="256.001" r="256.001"/>
+                <path style="fill:#FCC56B;" d="M310.859,474.208c-141.385,0-256-114.615-256-256c0-75.537,32.722-143.422,84.757-190.281
+                C56.738,70.303,0,156.525,0,256c0,141.385,114.615,256,256,256c65.849,0,125.883-24.87,171.243-65.718
+                C392.325,464.135,352.77,474.208,310.859,474.208z"/>
+                <g>
+                <path style="fill:#7F184C;" d="M293.248,427.894L293.248,427.894c-57.23,0-103.624-46.394-103.624-103.624l0,0h207.248l0,0
+                C396.872,381.5,350.477,427.894,293.248,427.894z"/>
+                <path style="fill:#7F184C;" d="M245.899,187.172c-5.753,0-10.414-4.662-10.414-10.414c0-13.433-10.928-24.363-24.362-24.363
+                c-13.433,0-24.362,10.93-24.362,24.363c0,5.753-4.662,10.414-10.414,10.414c-5.753,0-10.414-4.662-10.414-10.414
+                c0-24.918,20.273-45.192,45.19-45.192s45.19,20.273,45.19,45.192C256.314,182.51,251.651,187.172,245.899,187.172z"/>
+                <path style="fill:#7F184C;" d="M421.798,187.172c-5.753,0-10.414-4.662-10.414-10.414c0-13.433-10.928-24.363-24.362-24.363
+                s-24.363,10.93-24.363,24.363c0,5.753-4.661,10.414-10.414,10.414s-10.414-4.662-10.414-10.414
+                c0-24.918,20.273-45.192,45.192-45.192c24.917,0,45.19,20.273,45.19,45.192C432.213,182.51,427.551,187.172,421.798,187.172z"/>
+                </g>
+                <g>
+                <path style="fill:#F9A880;" d="M145.987,240.152c-19.011,0-34.425,15.412-34.425,34.425h68.848
+                C180.41,255.564,164.998,240.152,145.987,240.152z"/>
+                <path style="fill:#F9A880;" d="M446.251,235.539c-19.011,0-34.425,15.412-34.425,34.425h68.848
+                C480.676,250.951,465.264,235.539,446.251,235.539z"/>
+                </g>
+                <path style="fill:#F2F2F2;" d="M214.907,324.27v16.176c0,6.821,5.529,12.349,12.349,12.349h131.982
+                c6.821,0,12.349-5.529,12.349-12.349V324.27H214.907z"/>
+                <path style="fill:#FC4C59;" d="M295.422,384.903c-28.011-13.014-59.094-11.123-84.3,2.374c18.94,24.686,48.726,40.616,82.245,40.616
+                l0,0c14.772,0,28.809-3.112,41.526-8.682C325.564,404.777,312.187,392.692,295.422,384.903z"/>
+                <path style="fill:#0DAED3;" d="M122.201,144.896c0,29.74-24.109,53.848-53.848,53.848s-53.848-24.109-53.848-53.848
+                S68.352,37.599,68.352,37.599S122.201,115.156,122.201,144.896z"/>
+                <ellipse transform="matrix(0.2723 -0.9622 0.9622 0.2723 141.951 330.0856)" style="fill:#FCEB88;" cx="289.207" cy="71.194" rx="29.854" ry="53.46"/>
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="container-top">
+            <div class="container-top-left">
+                <div>
+                    <h1>Welcome !</h1>
+                </div>
+                <div>
+                    <p>The biggest envato community meetup in Bangladesh is happening right now! And you can be a part of it too...</p>
+                    <p>Get together with members of the Envato community to talk shop, trade war stories, make new friends and see the faces behind the avatars. Whether you're an author on Envato Market, a client on Envato Studio, or a learner on Tuts+, you are invited!</p>
+                    <p>It doesn't matter as long as you have the motivation and interest to work at the envato amd bring cookies to our event. Just kidding, but we can keep track of our guests. Don't forget to register on our <b>nvite</b> page here too!</p>
+                </div>
+            </div>
+            <div class="container-top-right">
+                <div class="form">
+                    <div>
+                        <h2>Sign up for our event</h2>
+                    </div>
+                    <div>
+                        <input id="nameSurname" type="text" value="Shahriyer Shuvo">
+                    </div>
+                    <div>
+                        <input id="email" type="text" placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <input id="phone" type="text" placeholder="Phone number">
+                    </div>
+                    <div>
+                        <input id="username" type="text" placeholder="Envato Username">
+                    </div>
+                    <div>
+                        <button id="formbutton" class="form-button">Let me in!</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="goEventDetails" class="container-center">
+            <div class="card">
+                    <svg class="main-svg" viewBox="0 0 50 50" enable-background="new 0 0 50 50" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><g><circle cx="24.9998" cy="24.9999" fill="#E7E3E6" r="23.27273"/></g><g><g><path d="M24.99997,49c-13.23343,0-24-10.76657-24-24s10.76657-24,24-24s24,10.76657,24,24      S38.2334,49,24.99997,49z M24.99997,2.45455C12.56815,2.45455,2.45452,12.56818,2.45452,25s10.11364,22.54546,22.54545,22.54546      S47.54543,37.43182,47.54543,25S37.43179,2.45455,24.99997,2.45455z" fill="#D2D2D2"/></g><g><path d="M24.99997,49c-7.79072,0-14.12879-10.76657-14.12879-24S17.20925,1,24.99997,1      c7.79025,0,14.12831,10.76657,14.12831,24S32.79022,49,24.99997,49z M24.99997,2.45455      c-6.98864,0-12.67424,10.11364-12.67424,22.54545s5.68561,22.54546,12.67424,22.54546      c6.98816,0,12.67377-10.11364,12.67377-22.54546S31.98813,2.45455,24.99997,2.45455z" fill="#D2D2D2"/></g><g><rect fill="#D2D2D2" height="46.54546" width="1.45455" x="24.2727" y="1.72727"/></g><g><path d="M24.99997,39.12831c-13.23343,0-24-6.33807-24-14.12831c0-7.79072,10.76657-14.12879,24-14.12879      s24,6.33807,24,14.12879C48.99997,32.79025,38.2334,39.12831,24.99997,39.12831z M24.99997,12.32576      C12.56815,12.32576,2.45452,18.01136,2.45452,25c0,6.98816,10.11364,12.67377,22.54545,12.67377S47.54543,31.98816,47.54543,25      C47.54543,18.01136,37.43179,12.32576,24.99997,12.32576z" fill="#D2D2D2"/></g><g><rect fill="#D2D2D2" height="1.45455" width="46.54546" x="1.72724" y="24.27273"/></g></g></g><g><path d="M48.27253,15.37993c0,6.49892-6.43774,11.58021-6.43774,11.58021s-6.43774-5.08129-6.43774-11.58021    c0-3.55546,2.88227-6.43774,6.43774-6.43774C45.39026,8.94219,48.27253,11.82447,48.27253,15.37993z" fill="#FFC966"/><circle cx="41.83479" cy="15.37993" fill="#FFFFFF" r="3.83097"/></g><g><path d="M14.76308,10.01486c0,6.49892-6.43774,11.58021-6.43774,11.58021s-6.43774-5.08129-6.43774-11.58021    c0-3.55546,2.88227-6.43774,6.43774-6.43774S14.76308,6.4594,14.76308,10.01486z" fill="#53B1E2"/><circle cx="8.32535" cy="10.01486" fill="#FFFFFF" r="3.83097"/></g><g><path d="M28.23072,34.03099c0,6.49892-6.43774,11.58022-6.43774,11.58022s-6.43774-5.08129-6.43774-11.58022    c0-3.55546,2.88227-6.43774,6.43774-6.43774S28.23072,30.47552,28.23072,34.03099z" fill="#EC6E62"/><circle cx="21.79298" cy="34.03099" fill="#FFFFFF" r="3.83097"/></g></g></svg>
+
+                    <div>
+                        <h2>Community</h2>
+                        <p>Meet the Community you've always talked with, in real life! This meetup will be all about authors engaging each with interesting conversation and topics. We will have loads of fun.</p>
+                    </div>
+                
+            </div>
+            <div class="card">
+                <svg class="main-svg" viewBox="0 0 50 50" id="Layer_1" style="enable-background:new 0 0 50 50;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+                    .st0{fill:#53B1E2;}
+                    .st1{fill:#E7E3E6;}
+                </style><g><g><g><path class="st0" d="M45.4,23.3h-3.8v13.9h3.8c2,0,3.6-1.6,3.6-3.6V27C49,25,47.4,23.3,45.4,23.3z"/></g><g><path class="st0" d="M4.6,23.3h3.8v13.9H4.6c-2,0-3.6-1.6-3.6-3.6V27C1,25,2.6,23.3,4.6,23.3z"/></g></g><g><path class="st1" d="M43,21.8v18c0,3.6-3,6.6-6.6,6.6h-7.7c-0.8,0-1.4-0.6-1.4-1.4c0-0.8,0.6-1.4,1.4-1.4h7.7    c2.1,0,3.8-1.7,3.8-3.8V22.3c0-8.2-6.3-15.2-14.4-15.6C17.1,6.3,9.8,13.2,9.8,21.8V38c0,0.8-0.6,1.4-1.4,1.4C7.7,39.4,7,38.7,7,38    V22.3c0-9.7,7.6-18,17.3-18.4C34.5,3.5,43,11.7,43,21.8z"/></g><g><path class="st0" d="M34.5,11.1c-0.6,0-1.1-0.2-1.6-0.5c-2.3-1.6-5-2.5-7.9-2.5s-5.6,0.9-7.9,2.5c-1.3,0.9-3,0.6-3.9-0.7    c-0.9-1.3-0.6-3,0.7-3.9C17.2,3.7,21,2.5,25,2.5S32.8,3.7,36.1,6c1.3,0.9,1.6,2.6,0.7,3.9C36.2,10.6,35.4,11.1,34.5,11.1z"/></g><circle class="st0" cx="27.7" cy="45" r="2.5"/></g></svg>
+
+                <div>
+                    <h2>Talk Shop</h2>
+                    <p>In this meetup you will get to know the marketplaces better, because that's why were all here for right? Learn a few tips and tricks from experienced authors from all ower the country</p>
+                </div>
+            </div>
+            <div class="card">
+                <svg class="main-svg" viewBox="0 0 50 50" enable-background="new 0 0 50 50" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><path d="M45.47913,47.26579H4.5208c-1.9445,0-3.52083-1.57633-3.52083-3.52083V6.25508    c0-1.9445,1.57633-3.52083,3.52083-3.52083h40.95833c1.9445,0,3.52083,1.57633,3.52083,3.52083v37.48988    C48.99996,45.68946,47.42363,47.26579,45.47913,47.26579z" fill="#E7E3E6"/><path d="M48.99997,9.76048V6.25507c0-1.94453-1.57633-3.52086-3.52081-3.52086H4.52079    c-1.94448,0-3.52081,1.57633-3.52081,3.52086v3.50541H48.99997z" fill="#53B1E2"/><path d="M17.06462,10.40814H4.45078v-2.7194c0-0.67552,0.54762-1.22313,1.22313-1.22313h10.16758    c0.67552,0,1.22313,0.54762,1.22313,1.22313V10.40814z" fill="#E7E3E6"/><path d="M29.67847,9.76048H17.06462V7.68875c0-0.67552,0.54762-1.22313,1.22313-1.22313h10.16758    c0.67552,0,1.22313,0.54762,1.22313,1.22313V9.76048z" fill="#D2D2D2"/><circle cx="40.42996" cy="6.54935" fill="#E7E3E6" r="1.34955"/><circle cx="36.3145" cy="6.54935" fill="#E7E3E6" r="1.34955"/></g><g><rect fill="#D2D2D2" height="8.07299" width="41.91538" x="4.26873" y="12.18866"/><g><circle cx="10.19687" cy="25.56284" fill="#EC6E62" r="2.83107"/><circle cx="25.22643" cy="25.56284" fill="#85BD57" r="2.83107"/><circle cx="40.25598" cy="25.56284" fill="#53B1E2" r="2.83107"/><rect fill="#D2D2D2" height="0.79573" width="8.9377" x="5.72802" y="31.618"/><rect fill="#D2D2D2" height="0.79573" width="8.9377" x="5.72802" y="30.11498"/><rect fill="#D2D2D2" height="0.79575" width="6.33346" x="5.72803" y="33.12099"/><g><rect fill="#D2D2D2" height="0.79573" width="8.9377" x="20.75758" y="31.618"/><rect fill="#D2D2D2" height="0.79573" width="8.9377" x="20.75758" y="30.11498"/><rect fill="#D2D2D2" height="0.79575" width="6.33346" x="20.75757" y="33.12099"/></g><rect fill="#D2D2D2" height="0.79573" width="8.9377" x="35.78713" y="31.618"/><rect fill="#D2D2D2" height="0.79573" width="8.9377" x="35.78713" y="30.11498"/><rect fill="#D2D2D2" height="0.79575" width="6.33346" x="35.78712" y="33.12099"/><rect fill="#EC6E62" height="7.46029" width="11.23692" x="4.57841" y="35.93731"/><rect fill="#85BD57" height="7.46029" width="11.23692" x="19.60796" y="35.93731"/><rect fill="#53B1E2" height="7.46029" width="11.23692" x="34.63752" y="35.93731"/></g></g></g></svg>
+                <div>
+                    <h2>War Stories</h2>
+                    <p>Gather round fellow authors! Hear the stories of success from your favorite authors and learn how they we able to tackle their problems and become successful</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-bottom">
+            <div class="container-accordion">
+                <div class="accordion1 ac-1">
+                    <div class="accordion-time">
+                        <h2 class="accordion-title">Time</h2>
+                    </div>
+                    <div class="accordion-info">
+                        <h2 class="accordion-title accordion-right-title">Stuff that will happen</h2>
+                        
+                    </div>
+                </div>
+                
+               <div class="accordion-items">
+                <div class="accordion-item">
+                    <div  class="accordion accordion-dark">
+                        <div class="accordion-time">
+                            <p>10am - 12pm</p>
+                        </div>
+                        <div class="accordion-info accordion-plus-button">
+                            <p class="accordion-right-title">Introduction and presentation about Envato</p>
+                            <i class="fa-solid fa-circle-plus accordion-button"></i>
+                        </div>
+                    </div>
+                    <div class="panel passive-tab">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                   </div>
+                   <div class="accordion-item">
+                    <div  class="accordion accordion-light">
+                        <div class="accordion-time">
+                            <p>10am - 12pm</p>
+                        </div>
+                        <div class="accordion-info accordion-plus-button">
+                            <p class="accordion-right-title">Introduction and presentation about Envato</p>
+                            <i class="fa-solid fa-circle-plus accordion-button"></i>
+                        </div>
+                    </div>
+                    <div class="panel passive-tab">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                   </div>
+                   <div class="accordion-item">
+                    <div  class="accordion accordion-dark">
+                        <div class="accordion-time">
+                            <p>10am - 12pm</p>
+                        </div>
+                        <div class="accordion-info accordion-plus-button">
+                            <p class="accordion-right-title">Introduction and presentation about Envato</p>
+                            <i class="fa-solid fa-circle-plus accordion-button"></i>
+                        </div>
+                    </div>
+                    <div class="panel passive-tab">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                   </div>
+                   <div class="accordion-item">
+                    <div  class="accordion accordion-light ac-5">
+                        <div class="accordion-time">
+                            <p>10am - 12pm</p>
+                        </div>
+                        <div class="accordion-info accordion-plus-button">
+                            <p class="accordion-right-title">Introduction and presentation about Envato</p>
+                            <i class="fa-solid fa-circle-plus accordion-button"></i>
+                        </div>
+                    </div>
+                    <div class="panel passive-tab">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                   </div>       
+               </div>
+
+
+
+                <!-- <div class="accordion accordion-light">
+                    <div class="accordion-time">
+                        <p>12pm - 02pm</p>
+                    </div>
+                    <div class="accordion-info accordion-plus-button">
+                        <p class="accordion-right-title">Sessions by honorable and Speakers</p>
+                        <i class="fa-solid fa-circle-plus accordion-button"></i>
+                    </div>
+                </div>
+                <div class="panel passive-tab">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                <div class="accordion accordion-dark">
+                    <div class="accordion-time">
+                        <p>02pm - 03pm</p>
+                    </div>
+                    <div class="accordion-info accordion-plus-button">
+                        <p class="accordion-right-title">Break and Mingle time with the authors</p>
+                        <i class="fa-solid fa-circle-plus accordion-button"></i>
+                    </div>
+                </div>
+                <div class="panel passive-tab">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                <div class="accordion accordion-light ac-5">
+                    <div class="accordion-time">
+                        <p>03pm - 05pm</p>
+                    </div>
+                    <div class="accordion-info accordion-plus-button">
+                        <p class="accordion-right-title">Portfolio Review, Rewards and Ending Presentation</p>
+                        <i class="fa-solid fa-circle-plus accordion-button"></i>
+                    </div>
+                </div>
+                <div class="panel passive-tab">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div> -->
+                
+            </div>
+            <div class="bottom-p">
+                <p>Please keep in mind that the timings may differ according to the flow of the event. The even is actually day long and we do plan to finish it within our set time but it doesn't have to be, if we all agree to hangour for some time more, what harm could it do? :)</p>
+            </div>
+        </div>
+        
+        <div class="circle">
+            
+        </div>
+        
+    </main>
+
+    <section>
+        <div class="section-container">
+            <div class="section-container-info">
+                <h1>We reward the Elites!</h1>
+                <p>Are you an Elite author in the Envato Marketplaces? If so we are proud of you! We want to give our thanks in achieving great success in the marketolace and we want to make known to the people of our country that you are aöazing! Our Elite gifting program includes giving you special merchandize from our community and also promote your works in our community.</p>
+                <p>All you have to do is contact us by clicking the button here and then its just going to the event, saying something motivational and taking rhat swag while looking amazing infront of thousands of other community members.</p>
+                <p>*Be advised, we will only give you Elite thank you swag for each level of elite you cross. That means if you do not cross to the next elite level before the next event, you cannot claim your prizes.</p>
+
+                <button class="section-button">Bring on the swag!</button>
+            </div>
+        </div>
+    </section>
+
+    <article>
+        <div id="goSpeakers" class="article-container">
+            <div class="article-container-info">
+                <h1>Speakers</h1>
+                <p>Meet our Valuable speakers who will be each giving 10 minutes sessions on different subjects regardşng being a digital product author, working at envato and marketing your bsiness. Hope will have a great time to out presentations!</p>
+            </div>
+            <div class="article-container-img">
+               <div class="row">
+                    <div id="col-media" class="col">
+                        <div class="col-container ">
+                            <div>
+                                <h1>Shahriyer Shuvo</h1>
+                                <p>More about selling in the Envato Marketplaces</p>
+                            </div>
+                            <div class="col-container-social">
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+		                            S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"/>
+	                                <path style="fill:#0000006c;" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055
+		                            v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366
+		                            C154.791,104.556,158.341,100.277,163.394,100.277z"/>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 112.197 112.197" style="enable-background:new 0 0 112.197 112.197;" xml:space="preserve">
+                                    <g>
+	                                <circle style="fill: white;" cx="56.099" cy="56.098" r="56.098"/>
+	                                <g>
+		                            <path style="fill:#1d1d1d4e;" d="M90.461,40.316c-2.404,1.066-4.99,1.787-7.702,2.109c2.769-1.659,4.894-4.284,5.897-7.417
+			                        c-2.591,1.537-5.462,2.652-8.515,3.253c-2.446-2.605-5.931-4.233-9.79-4.233c-7.404,0-13.409,6.005-13.409,13.409
+			                        c0,1.051,0.119,2.074,0.349,3.056c-11.144-0.559-21.025-5.897-27.639-14.012c-1.154,1.98-1.816,4.285-1.816,6.742
+			                        c0,4.651,2.369,8.757,5.965,11.161c-2.197-0.069-4.266-0.672-6.073-1.679c-0.001,0.057-0.001,0.114-0.001,0.17
+			                        c0,6.497,4.624,11.916,10.757,13.147c-1.124,0.308-2.311,0.471-3.532,0.471c-0.866,0-1.705-0.083-2.523-0.239
+			                        c1.706,5.326,6.657,9.203,12.526,9.312c-4.59,3.597-10.371,5.74-16.655,5.74c-1.08,0-2.15-0.063-3.197-0.188
+			                        c5.931,3.806,12.981,6.025,20.553,6.025c24.664,0,38.152-20.432,38.152-38.153c0-0.581-0.013-1.16-0.039-1.734
+			                        C86.391,45.366,88.664,43.005,90.461,40.316L90.461,40.316z"/>
+	                                </g>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66s-65.21,145.659-145.66,145.659S0,226.1,0,145.66
+		                            S65.21,0,145.659,0z"/>
+	                                <path style="fill:#28282850;" d="M82.079,200.136h27.275v-90.91H82.079V200.136z M188.338,106.077
+		                            c-13.237,0-25.081,4.834-33.483,15.504v-12.654H127.48v91.21h27.375v-49.324c0-10.424,9.55-20.593,21.512-20.593
+		                            s14.912,10.169,14.912,20.338v49.57h27.275v-51.6C218.553,112.686,201.584,106.077,188.338,106.077z M95.589,100.141
+		                            c7.538,0,13.656-6.118,13.656-13.656S103.127,72.83,95.589,72.83s-13.656,6.118-13.656,13.656S88.051,100.141,95.589,100.141z"/>
+                                    </g>
+
+                                    </svg>
+
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.32 291.32" style="enable-background:new 0 0 291.32 291.32;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.66,0c80.113,0,145.66,65.547,145.66,145.66s-65.547,145.66-145.66,145.66S0,225.772,0,145.66
+		                            S65.547,0,145.66,0z"/>
+	                                <g>
+		                            <polygon style="fill:rgba(54, 54, 54, 0.311);" points="219.4,121.079 219.4,137.466 235.786,137.466 235.786,153.853 219.4,153.853 219.4,170.24 
+			                        203.013,170.24 203.013,153.853 186.626,153.853 186.626,137.466 203.013,137.466 203.013,121.079 		"/>
+		                            <path style="fill:#3434344a;" d="M71.919,186.626c-21.849-21.849-21.849-60.085,0.91-81.933
+			                        c16.387-16.387,40.056-20.028,60.995-11.835l8.193,4.552l9.104,6.373l-14.566,14.566l-5.462-3.641
+			                        c-12.745-8.193-30.953-6.373-42.787,5.462c-13.656,13.656-14.566,38.236,0,52.802c13.656,14.566,38.236,14.566,50.981,0
+			                        c3.641-3.641,7.283-9.104,8.193-14.566v-1.821h-32.773v-18.207h51.891l0.91,4.552v12.745c-0.91,11.835-5.462,23.67-13.656,31.863
+			                        C132.004,208.475,93.768,208.475,71.919,186.626z"/>
+	                                </g>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-container">
+                            <div>
+                                <h1>Shahriyer Shuvo</h1>
+                                <p>More about selling in the Envato Marketplaces</p>
+                            </div>
+                            <div class="col-container-social">
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+		                            S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"/>
+	                                <path style="fill:#0000006c;" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055
+		                            v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366
+		                            C154.791,104.556,158.341,100.277,163.394,100.277z"/>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 112.197 112.197" style="enable-background:new 0 0 112.197 112.197;" xml:space="preserve">
+                                    <g>
+	                                <circle style="fill: white;" cx="56.099" cy="56.098" r="56.098"/>
+	                                <g>
+		                            <path style="fill:#1d1d1d4e;" d="M90.461,40.316c-2.404,1.066-4.99,1.787-7.702,2.109c2.769-1.659,4.894-4.284,5.897-7.417
+			                        c-2.591,1.537-5.462,2.652-8.515,3.253c-2.446-2.605-5.931-4.233-9.79-4.233c-7.404,0-13.409,6.005-13.409,13.409
+			                        c0,1.051,0.119,2.074,0.349,3.056c-11.144-0.559-21.025-5.897-27.639-14.012c-1.154,1.98-1.816,4.285-1.816,6.742
+			                        c0,4.651,2.369,8.757,5.965,11.161c-2.197-0.069-4.266-0.672-6.073-1.679c-0.001,0.057-0.001,0.114-0.001,0.17
+			                        c0,6.497,4.624,11.916,10.757,13.147c-1.124,0.308-2.311,0.471-3.532,0.471c-0.866,0-1.705-0.083-2.523-0.239
+			                        c1.706,5.326,6.657,9.203,12.526,9.312c-4.59,3.597-10.371,5.74-16.655,5.74c-1.08,0-2.15-0.063-3.197-0.188
+			                        c5.931,3.806,12.981,6.025,20.553,6.025c24.664,0,38.152-20.432,38.152-38.153c0-0.581-0.013-1.16-0.039-1.734
+			                        C86.391,45.366,88.664,43.005,90.461,40.316L90.461,40.316z"/>
+	                                </g>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66s-65.21,145.659-145.66,145.659S0,226.1,0,145.66
+		                            S65.21,0,145.659,0z"/>
+	                                <path style="fill:#28282850;" d="M82.079,200.136h27.275v-90.91H82.079V200.136z M188.338,106.077
+		                            c-13.237,0-25.081,4.834-33.483,15.504v-12.654H127.48v91.21h27.375v-49.324c0-10.424,9.55-20.593,21.512-20.593
+		                            s14.912,10.169,14.912,20.338v49.57h27.275v-51.6C218.553,112.686,201.584,106.077,188.338,106.077z M95.589,100.141
+		                            c7.538,0,13.656-6.118,13.656-13.656S103.127,72.83,95.589,72.83s-13.656,6.118-13.656,13.656S88.051,100.141,95.589,100.141z"/>
+                                    </g>
+
+                                    </svg>
+
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.32 291.32" style="enable-background:new 0 0 291.32 291.32;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.66,0c80.113,0,145.66,65.547,145.66,145.66s-65.547,145.66-145.66,145.66S0,225.772,0,145.66
+		                            S65.547,0,145.66,0z"/>
+	                                <g>
+		                            <polygon style="fill:rgba(54, 54, 54, 0.311);" points="219.4,121.079 219.4,137.466 235.786,137.466 235.786,153.853 219.4,153.853 219.4,170.24 
+			                        203.013,170.24 203.013,153.853 186.626,153.853 186.626,137.466 203.013,137.466 203.013,121.079 		"/>
+		                            <path style="fill:#3434344a;" d="M71.919,186.626c-21.849-21.849-21.849-60.085,0.91-81.933
+			                        c16.387-16.387,40.056-20.028,60.995-11.835l8.193,4.552l9.104,6.373l-14.566,14.566l-5.462-3.641
+			                        c-12.745-8.193-30.953-6.373-42.787,5.462c-13.656,13.656-14.566,38.236,0,52.802c13.656,14.566,38.236,14.566,50.981,0
+			                        c3.641-3.641,7.283-9.104,8.193-14.566v-1.821h-32.773v-18.207h51.891l0.91,4.552v12.745c-0.91,11.835-5.462,23.67-13.656,31.863
+			                        C132.004,208.475,93.768,208.475,71.919,186.626z"/>
+	                                </g>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-container">
+                            <div>
+                                <h1>Shahriyer Shuvo</h1>
+                                <p>More about selling in the Envato Marketplaces</p>
+                            </div>
+                            <div class="col-container-social">
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+		                            S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"/>
+	                                <path style="fill:#0000006c;" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055
+		                            v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366
+		                            C154.791,104.556,158.341,100.277,163.394,100.277z"/>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 112.197 112.197" style="enable-background:new 0 0 112.197 112.197;" xml:space="preserve">
+                                    <g>
+	                                <circle style="fill: white;" cx="56.099" cy="56.098" r="56.098"/>
+	                                <g>
+		                            <path style="fill:#1d1d1d4e;" d="M90.461,40.316c-2.404,1.066-4.99,1.787-7.702,2.109c2.769-1.659,4.894-4.284,5.897-7.417
+			                        c-2.591,1.537-5.462,2.652-8.515,3.253c-2.446-2.605-5.931-4.233-9.79-4.233c-7.404,0-13.409,6.005-13.409,13.409
+			                        c0,1.051,0.119,2.074,0.349,3.056c-11.144-0.559-21.025-5.897-27.639-14.012c-1.154,1.98-1.816,4.285-1.816,6.742
+			                        c0,4.651,2.369,8.757,5.965,11.161c-2.197-0.069-4.266-0.672-6.073-1.679c-0.001,0.057-0.001,0.114-0.001,0.17
+			                        c0,6.497,4.624,11.916,10.757,13.147c-1.124,0.308-2.311,0.471-3.532,0.471c-0.866,0-1.705-0.083-2.523-0.239
+			                        c1.706,5.326,6.657,9.203,12.526,9.312c-4.59,3.597-10.371,5.74-16.655,5.74c-1.08,0-2.15-0.063-3.197-0.188
+			                        c5.931,3.806,12.981,6.025,20.553,6.025c24.664,0,38.152-20.432,38.152-38.153c0-0.581-0.013-1.16-0.039-1.734
+			                        C86.391,45.366,88.664,43.005,90.461,40.316L90.461,40.316z"/>
+	                                </g>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66s-65.21,145.659-145.66,145.659S0,226.1,0,145.66
+		                            S65.21,0,145.659,0z"/>
+	                                <path style="fill:#28282850;" d="M82.079,200.136h27.275v-90.91H82.079V200.136z M188.338,106.077
+		                            c-13.237,0-25.081,4.834-33.483,15.504v-12.654H127.48v91.21h27.375v-49.324c0-10.424,9.55-20.593,21.512-20.593
+		                            s14.912,10.169,14.912,20.338v49.57h27.275v-51.6C218.553,112.686,201.584,106.077,188.338,106.077z M95.589,100.141
+		                            c7.538,0,13.656-6.118,13.656-13.656S103.127,72.83,95.589,72.83s-13.656,6.118-13.656,13.656S88.051,100.141,95.589,100.141z"/>
+                                    </g>
+
+                                    </svg>
+
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.32 291.32" style="enable-background:new 0 0 291.32 291.32;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.66,0c80.113,0,145.66,65.547,145.66,145.66s-65.547,145.66-145.66,145.66S0,225.772,0,145.66
+		                            S65.547,0,145.66,0z"/>
+	                                <g>
+		                            <polygon style="fill:rgba(54, 54, 54, 0.311);" points="219.4,121.079 219.4,137.466 235.786,137.466 235.786,153.853 219.4,153.853 219.4,170.24 
+			                        203.013,170.24 203.013,153.853 186.626,153.853 186.626,137.466 203.013,137.466 203.013,121.079 		"/>
+		                            <path style="fill:#3434344a;" d="M71.919,186.626c-21.849-21.849-21.849-60.085,0.91-81.933
+			                        c16.387-16.387,40.056-20.028,60.995-11.835l8.193,4.552l9.104,6.373l-14.566,14.566l-5.462-3.641
+			                        c-12.745-8.193-30.953-6.373-42.787,5.462c-13.656,13.656-14.566,38.236,0,52.802c13.656,14.566,38.236,14.566,50.981,0
+			                        c3.641-3.641,7.283-9.104,8.193-14.566v-1.821h-32.773v-18.207h51.891l0.91,4.552v12.745c-0.91,11.835-5.462,23.67-13.656,31.863
+			                        C132.004,208.475,93.768,208.475,71.919,186.626z"/>
+	                                </g>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               <div class="row">
+                    <div class="col">
+                        <div class="col-container">
+                            <div>
+                                <h1>Shahriyer Shuvo</h1>
+                                <p>More about selling in the Envato Marketplaces</p>
+                            </div>
+                            <div class="col-container-social">
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+		                            S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"/>
+	                                <path style="fill:#0000006c;" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055
+		                            v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366
+		                            C154.791,104.556,158.341,100.277,163.394,100.277z"/>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 112.197 112.197" style="enable-background:new 0 0 112.197 112.197;" xml:space="preserve">
+                                    <g>
+	                                <circle style="fill: white;" cx="56.099" cy="56.098" r="56.098"/>
+	                                <g>
+		                            <path style="fill:#1d1d1d4e;" d="M90.461,40.316c-2.404,1.066-4.99,1.787-7.702,2.109c2.769-1.659,4.894-4.284,5.897-7.417
+			                        c-2.591,1.537-5.462,2.652-8.515,3.253c-2.446-2.605-5.931-4.233-9.79-4.233c-7.404,0-13.409,6.005-13.409,13.409
+			                        c0,1.051,0.119,2.074,0.349,3.056c-11.144-0.559-21.025-5.897-27.639-14.012c-1.154,1.98-1.816,4.285-1.816,6.742
+			                        c0,4.651,2.369,8.757,5.965,11.161c-2.197-0.069-4.266-0.672-6.073-1.679c-0.001,0.057-0.001,0.114-0.001,0.17
+			                        c0,6.497,4.624,11.916,10.757,13.147c-1.124,0.308-2.311,0.471-3.532,0.471c-0.866,0-1.705-0.083-2.523-0.239
+			                        c1.706,5.326,6.657,9.203,12.526,9.312c-4.59,3.597-10.371,5.74-16.655,5.74c-1.08,0-2.15-0.063-3.197-0.188
+			                        c5.931,3.806,12.981,6.025,20.553,6.025c24.664,0,38.152-20.432,38.152-38.153c0-0.581-0.013-1.16-0.039-1.734
+			                        C86.391,45.366,88.664,43.005,90.461,40.316L90.461,40.316z"/>
+	                                </g>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66s-65.21,145.659-145.66,145.659S0,226.1,0,145.66
+		                            S65.21,0,145.659,0z"/>
+	                                <path style="fill:#28282850;" d="M82.079,200.136h27.275v-90.91H82.079V200.136z M188.338,106.077
+		                            c-13.237,0-25.081,4.834-33.483,15.504v-12.654H127.48v91.21h27.375v-49.324c0-10.424,9.55-20.593,21.512-20.593
+		                            s14.912,10.169,14.912,20.338v49.57h27.275v-51.6C218.553,112.686,201.584,106.077,188.338,106.077z M95.589,100.141
+		                            c7.538,0,13.656-6.118,13.656-13.656S103.127,72.83,95.589,72.83s-13.656,6.118-13.656,13.656S88.051,100.141,95.589,100.141z"/>
+                                    </g>
+
+                                    </svg>
+
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.32 291.32" style="enable-background:new 0 0 291.32 291.32;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.66,0c80.113,0,145.66,65.547,145.66,145.66s-65.547,145.66-145.66,145.66S0,225.772,0,145.66
+		                            S65.547,0,145.66,0z"/>
+	                                <g>
+		                            <polygon style="fill:rgba(54, 54, 54, 0.311);" points="219.4,121.079 219.4,137.466 235.786,137.466 235.786,153.853 219.4,153.853 219.4,170.24 
+			                        203.013,170.24 203.013,153.853 186.626,153.853 186.626,137.466 203.013,137.466 203.013,121.079 		"/>
+		                            <path style="fill:#3434344a;" d="M71.919,186.626c-21.849-21.849-21.849-60.085,0.91-81.933
+			                        c16.387-16.387,40.056-20.028,60.995-11.835l8.193,4.552l9.104,6.373l-14.566,14.566l-5.462-3.641
+			                        c-12.745-8.193-30.953-6.373-42.787,5.462c-13.656,13.656-14.566,38.236,0,52.802c13.656,14.566,38.236,14.566,50.981,0
+			                        c3.641-3.641,7.283-9.104,8.193-14.566v-1.821h-32.773v-18.207h51.891l0.91,4.552v12.745c-0.91,11.835-5.462,23.67-13.656,31.863
+			                        C132.004,208.475,93.768,208.475,71.919,186.626z"/>
+	                                </g>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-container">
+                            <div>
+                                <h1>Shahriyer Shuvo</h1>
+                                <p>More about selling in the Envato Marketplaces</p>
+                            </div>
+                            <div class="col-container-social">
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+		                            S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"/>
+	                                <path style="fill:#0000006c;" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055
+		                            v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366
+		                            C154.791,104.556,158.341,100.277,163.394,100.277z"/>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 112.197 112.197" style="enable-background:new 0 0 112.197 112.197;" xml:space="preserve">
+                                    <g>
+	                                <circle style="fill: white;" cx="56.099" cy="56.098" r="56.098"/>
+	                                <g>
+		                            <path style="fill:#1d1d1d4e;" d="M90.461,40.316c-2.404,1.066-4.99,1.787-7.702,2.109c2.769-1.659,4.894-4.284,5.897-7.417
+			                        c-2.591,1.537-5.462,2.652-8.515,3.253c-2.446-2.605-5.931-4.233-9.79-4.233c-7.404,0-13.409,6.005-13.409,13.409
+			                        c0,1.051,0.119,2.074,0.349,3.056c-11.144-0.559-21.025-5.897-27.639-14.012c-1.154,1.98-1.816,4.285-1.816,6.742
+			                        c0,4.651,2.369,8.757,5.965,11.161c-2.197-0.069-4.266-0.672-6.073-1.679c-0.001,0.057-0.001,0.114-0.001,0.17
+			                        c0,6.497,4.624,11.916,10.757,13.147c-1.124,0.308-2.311,0.471-3.532,0.471c-0.866,0-1.705-0.083-2.523-0.239
+			                        c1.706,5.326,6.657,9.203,12.526,9.312c-4.59,3.597-10.371,5.74-16.655,5.74c-1.08,0-2.15-0.063-3.197-0.188
+			                        c5.931,3.806,12.981,6.025,20.553,6.025c24.664,0,38.152-20.432,38.152-38.153c0-0.581-0.013-1.16-0.039-1.734
+			                        C86.391,45.366,88.664,43.005,90.461,40.316L90.461,40.316z"/>
+	                                </g>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66s-65.21,145.659-145.66,145.659S0,226.1,0,145.66
+		                            S65.21,0,145.659,0z"/>
+	                                <path style="fill:#28282850;" d="M82.079,200.136h27.275v-90.91H82.079V200.136z M188.338,106.077
+		                            c-13.237,0-25.081,4.834-33.483,15.504v-12.654H127.48v91.21h27.375v-49.324c0-10.424,9.55-20.593,21.512-20.593
+		                            s14.912,10.169,14.912,20.338v49.57h27.275v-51.6C218.553,112.686,201.584,106.077,188.338,106.077z M95.589,100.141
+		                            c7.538,0,13.656-6.118,13.656-13.656S103.127,72.83,95.589,72.83s-13.656,6.118-13.656,13.656S88.051,100.141,95.589,100.141z"/>
+                                    </g>
+
+                                    </svg>
+
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.32 291.32" style="enable-background:new 0 0 291.32 291.32;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.66,0c80.113,0,145.66,65.547,145.66,145.66s-65.547,145.66-145.66,145.66S0,225.772,0,145.66
+		                            S65.547,0,145.66,0z"/>
+	                                <g>
+		                            <polygon style="fill:rgba(54, 54, 54, 0.311);" points="219.4,121.079 219.4,137.466 235.786,137.466 235.786,153.853 219.4,153.853 219.4,170.24 
+			                        203.013,170.24 203.013,153.853 186.626,153.853 186.626,137.466 203.013,137.466 203.013,121.079 		"/>
+		                            <path style="fill:#3434344a;" d="M71.919,186.626c-21.849-21.849-21.849-60.085,0.91-81.933
+			                        c16.387-16.387,40.056-20.028,60.995-11.835l8.193,4.552l9.104,6.373l-14.566,14.566l-5.462-3.641
+			                        c-12.745-8.193-30.953-6.373-42.787,5.462c-13.656,13.656-14.566,38.236,0,52.802c13.656,14.566,38.236,14.566,50.981,0
+			                        c3.641-3.641,7.283-9.104,8.193-14.566v-1.821h-32.773v-18.207h51.891l0.91,4.552v12.745c-0.91,11.835-5.462,23.67-13.656,31.863
+			                        C132.004,208.475,93.768,208.475,71.919,186.626z"/>
+	                                </g>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-container">
+                            <div>
+                                <h1>Shahriyer Shuvo</h1>
+                                <p>More about selling in the Envato Marketplaces</p>
+                            </div>
+                            <div class="col-container-social">
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+		                            S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"/>
+	                                <path style="fill:#0000006c;" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055
+		                            v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366
+		                            C154.791,104.556,158.341,100.277,163.394,100.277z"/>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 112.197 112.197" style="enable-background:new 0 0 112.197 112.197;" xml:space="preserve">
+                                    <g>
+	                                <circle style="fill: white;" cx="56.099" cy="56.098" r="56.098"/>
+	                                <g>
+		                            <path style="fill:#1d1d1d4e;" d="M90.461,40.316c-2.404,1.066-4.99,1.787-7.702,2.109c2.769-1.659,4.894-4.284,5.897-7.417
+			                        c-2.591,1.537-5.462,2.652-8.515,3.253c-2.446-2.605-5.931-4.233-9.79-4.233c-7.404,0-13.409,6.005-13.409,13.409
+			                        c0,1.051,0.119,2.074,0.349,3.056c-11.144-0.559-21.025-5.897-27.639-14.012c-1.154,1.98-1.816,4.285-1.816,6.742
+			                        c0,4.651,2.369,8.757,5.965,11.161c-2.197-0.069-4.266-0.672-6.073-1.679c-0.001,0.057-0.001,0.114-0.001,0.17
+			                        c0,6.497,4.624,11.916,10.757,13.147c-1.124,0.308-2.311,0.471-3.532,0.471c-0.866,0-1.705-0.083-2.523-0.239
+			                        c1.706,5.326,6.657,9.203,12.526,9.312c-4.59,3.597-10.371,5.74-16.655,5.74c-1.08,0-2.15-0.063-3.197-0.188
+			                        c5.931,3.806,12.981,6.025,20.553,6.025c24.664,0,38.152-20.432,38.152-38.153c0-0.581-0.013-1.16-0.039-1.734
+			                        C86.391,45.366,88.664,43.005,90.461,40.316L90.461,40.316z"/>
+	                                </g>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66s-65.21,145.659-145.66,145.659S0,226.1,0,145.66
+		                            S65.21,0,145.659,0z"/>
+	                                <path style="fill:#28282850;" d="M82.079,200.136h27.275v-90.91H82.079V200.136z M188.338,106.077
+		                            c-13.237,0-25.081,4.834-33.483,15.504v-12.654H127.48v91.21h27.375v-49.324c0-10.424,9.55-20.593,21.512-20.593
+		                            s14.912,10.169,14.912,20.338v49.57h27.275v-51.6C218.553,112.686,201.584,106.077,188.338,106.077z M95.589,100.141
+		                            c7.538,0,13.656-6.118,13.656-13.656S103.127,72.83,95.589,72.83s-13.656,6.118-13.656,13.656S88.051,100.141,95.589,100.141z"/>
+                                    </g>
+
+                                    </svg>
+
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.32 291.32" style="enable-background:new 0 0 291.32 291.32;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.66,0c80.113,0,145.66,65.547,145.66,145.66s-65.547,145.66-145.66,145.66S0,225.772,0,145.66
+		                            S65.547,0,145.66,0z"/>
+	                                <g>
+		                            <polygon style="fill:rgba(54, 54, 54, 0.311);" points="219.4,121.079 219.4,137.466 235.786,137.466 235.786,153.853 219.4,153.853 219.4,170.24 
+			                        203.013,170.24 203.013,153.853 186.626,153.853 186.626,137.466 203.013,137.466 203.013,121.079 		"/>
+		                            <path style="fill:#3434344a;" d="M71.919,186.626c-21.849-21.849-21.849-60.085,0.91-81.933
+			                        c16.387-16.387,40.056-20.028,60.995-11.835l8.193,4.552l9.104,6.373l-14.566,14.566l-5.462-3.641
+			                        c-12.745-8.193-30.953-6.373-42.787,5.462c-13.656,13.656-14.566,38.236,0,52.802c13.656,14.566,38.236,14.566,50.981,0
+			                        c3.641-3.641,7.283-9.104,8.193-14.566v-1.821h-32.773v-18.207h51.891l0.91,4.552v12.745c-0.91,11.835-5.462,23.67-13.656,31.863
+			                        C132.004,208.475,93.768,208.475,71.919,186.626z"/>
+	                                </g>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="col-container">
+                            <div>
+                                <h1>Shahriyer Shuvo</h1>
+                                <p>More about selling in the Envato Marketplaces</p>
+                            </div>
+                            <div class="col-container-social">
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+		                            S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"/>
+	                                <path style="fill:#0000006c;" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055
+		                            v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366
+		                            C154.791,104.556,158.341,100.277,163.394,100.277z"/>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 112.197 112.197" style="enable-background:new 0 0 112.197 112.197;" xml:space="preserve">
+                                    <g>
+	                                <circle style="fill: white;" cx="56.099" cy="56.098" r="56.098"/>
+	                                <g>
+		                            <path style="fill:#1d1d1d4e;" d="M90.461,40.316c-2.404,1.066-4.99,1.787-7.702,2.109c2.769-1.659,4.894-4.284,5.897-7.417
+			                        c-2.591,1.537-5.462,2.652-8.515,3.253c-2.446-2.605-5.931-4.233-9.79-4.233c-7.404,0-13.409,6.005-13.409,13.409
+			                        c0,1.051,0.119,2.074,0.349,3.056c-11.144-0.559-21.025-5.897-27.639-14.012c-1.154,1.98-1.816,4.285-1.816,6.742
+			                        c0,4.651,2.369,8.757,5.965,11.161c-2.197-0.069-4.266-0.672-6.073-1.679c-0.001,0.057-0.001,0.114-0.001,0.17
+			                        c0,6.497,4.624,11.916,10.757,13.147c-1.124,0.308-2.311,0.471-3.532,0.471c-0.866,0-1.705-0.083-2.523-0.239
+			                        c1.706,5.326,6.657,9.203,12.526,9.312c-4.59,3.597-10.371,5.74-16.655,5.74c-1.08,0-2.15-0.063-3.197-0.188
+			                        c5.931,3.806,12.981,6.025,20.553,6.025c24.664,0,38.152-20.432,38.152-38.153c0-0.581-0.013-1.16-0.039-1.734
+			                        C86.391,45.366,88.664,43.005,90.461,40.316L90.461,40.316z"/>
+	                                </g>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66s-65.21,145.659-145.66,145.659S0,226.1,0,145.66
+		                            S65.21,0,145.659,0z"/>
+	                                <path style="fill:#28282850;" d="M82.079,200.136h27.275v-90.91H82.079V200.136z M188.338,106.077
+		                            c-13.237,0-25.081,4.834-33.483,15.504v-12.654H127.48v91.21h27.375v-49.324c0-10.424,9.55-20.593,21.512-20.593
+		                            s14.912,10.169,14.912,20.338v49.57h27.275v-51.6C218.553,112.686,201.584,106.077,188.338,106.077z M95.589,100.141
+		                            c7.538,0,13.656-6.118,13.656-13.656S103.127,72.83,95.589,72.83s-13.656,6.118-13.656,13.656S88.051,100.141,95.589,100.141z"/>
+                                    </g>
+
+                                    </svg>
+
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.32 291.32" style="enable-background:new 0 0 291.32 291.32;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.66,0c80.113,0,145.66,65.547,145.66,145.66s-65.547,145.66-145.66,145.66S0,225.772,0,145.66
+		                            S65.547,0,145.66,0z"/>
+	                                <g>
+		                            <polygon style="fill:rgba(54, 54, 54, 0.311);" points="219.4,121.079 219.4,137.466 235.786,137.466 235.786,153.853 219.4,153.853 219.4,170.24 
+			                        203.013,170.24 203.013,153.853 186.626,153.853 186.626,137.466 203.013,137.466 203.013,121.079 		"/>
+		                            <path style="fill:#3434344a;" d="M71.919,186.626c-21.849-21.849-21.849-60.085,0.91-81.933
+			                        c16.387-16.387,40.056-20.028,60.995-11.835l8.193,4.552l9.104,6.373l-14.566,14.566l-5.462-3.641
+			                        c-12.745-8.193-30.953-6.373-42.787,5.462c-13.656,13.656-14.566,38.236,0,52.802c13.656,14.566,38.236,14.566,50.981,0
+			                        c3.641-3.641,7.283-9.104,8.193-14.566v-1.821h-32.773v-18.207h51.891l0.91,4.552v12.745c-0.91,11.835-5.462,23.67-13.656,31.863
+			                        C132.004,208.475,93.768,208.475,71.919,186.626z"/>
+	                                </g>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-container">
+                            <div>
+                                <h1>Shahriyer Shuvo</h1>
+                                <p>More about selling in the Envato Marketplaces</p>
+                            </div>
+                            <div class="col-container-social">
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+		                            S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"/>
+	                                <path style="fill:#0000006c;" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055
+		                            v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366
+		                            C154.791,104.556,158.341,100.277,163.394,100.277z"/>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 112.197 112.197" style="enable-background:new 0 0 112.197 112.197;" xml:space="preserve">
+                                    <g>
+	                                <circle style="fill: white;" cx="56.099" cy="56.098" r="56.098"/>
+	                                <g>
+		                            <path style="fill:#1d1d1d4e;" d="M90.461,40.316c-2.404,1.066-4.99,1.787-7.702,2.109c2.769-1.659,4.894-4.284,5.897-7.417
+			                        c-2.591,1.537-5.462,2.652-8.515,3.253c-2.446-2.605-5.931-4.233-9.79-4.233c-7.404,0-13.409,6.005-13.409,13.409
+			                        c0,1.051,0.119,2.074,0.349,3.056c-11.144-0.559-21.025-5.897-27.639-14.012c-1.154,1.98-1.816,4.285-1.816,6.742
+			                        c0,4.651,2.369,8.757,5.965,11.161c-2.197-0.069-4.266-0.672-6.073-1.679c-0.001,0.057-0.001,0.114-0.001,0.17
+			                        c0,6.497,4.624,11.916,10.757,13.147c-1.124,0.308-2.311,0.471-3.532,0.471c-0.866,0-1.705-0.083-2.523-0.239
+			                        c1.706,5.326,6.657,9.203,12.526,9.312c-4.59,3.597-10.371,5.74-16.655,5.74c-1.08,0-2.15-0.063-3.197-0.188
+			                        c5.931,3.806,12.981,6.025,20.553,6.025c24.664,0,38.152-20.432,38.152-38.153c0-0.581-0.013-1.16-0.039-1.734
+			                        C86.391,45.366,88.664,43.005,90.461,40.316L90.461,40.316z"/>
+	                                </g>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66s-65.21,145.659-145.66,145.659S0,226.1,0,145.66
+		                            S65.21,0,145.659,0z"/>
+	                                <path style="fill:#28282850;" d="M82.079,200.136h27.275v-90.91H82.079V200.136z M188.338,106.077
+		                            c-13.237,0-25.081,4.834-33.483,15.504v-12.654H127.48v91.21h27.375v-49.324c0-10.424,9.55-20.593,21.512-20.593
+		                            s14.912,10.169,14.912,20.338v49.57h27.275v-51.6C218.553,112.686,201.584,106.077,188.338,106.077z M95.589,100.141
+		                            c7.538,0,13.656-6.118,13.656-13.656S103.127,72.83,95.589,72.83s-13.656,6.118-13.656,13.656S88.051,100.141,95.589,100.141z"/>
+                                    </g>
+
+                                    </svg>
+
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.32 291.32" style="enable-background:new 0 0 291.32 291.32;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.66,0c80.113,0,145.66,65.547,145.66,145.66s-65.547,145.66-145.66,145.66S0,225.772,0,145.66
+		                            S65.547,0,145.66,0z"/>
+	                                <g>
+		                            <polygon style="fill:rgba(54, 54, 54, 0.311);" points="219.4,121.079 219.4,137.466 235.786,137.466 235.786,153.853 219.4,153.853 219.4,170.24 
+			                        203.013,170.24 203.013,153.853 186.626,153.853 186.626,137.466 203.013,137.466 203.013,121.079 		"/>
+		                            <path style="fill:#3434344a;" d="M71.919,186.626c-21.849-21.849-21.849-60.085,0.91-81.933
+			                        c16.387-16.387,40.056-20.028,60.995-11.835l8.193,4.552l9.104,6.373l-14.566,14.566l-5.462-3.641
+			                        c-12.745-8.193-30.953-6.373-42.787,5.462c-13.656,13.656-14.566,38.236,0,52.802c13.656,14.566,38.236,14.566,50.981,0
+			                        c3.641-3.641,7.283-9.104,8.193-14.566v-1.821h-32.773v-18.207h51.891l0.91,4.552v12.745c-0.91,11.835-5.462,23.67-13.656,31.863
+			                        C132.004,208.475,93.768,208.475,71.919,186.626z"/>
+	                                </g>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-container">
+                            <div>
+                                <h1>Shahriyer Shuvo</h1>
+                                <p>More about selling in the Envato Marketplaces</p>
+                            </div>
+                            <div class="col-container-social">
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+		                            S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"/>
+	                                <path style="fill:#0000006c;" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055
+		                            v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366
+		                            C154.791,104.556,158.341,100.277,163.394,100.277z"/>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 112.197 112.197" style="enable-background:new 0 0 112.197 112.197;" xml:space="preserve">
+                                    <g>
+	                                <circle style="fill: white;" cx="56.099" cy="56.098" r="56.098"/>
+	                                <g>
+		                            <path style="fill:#1d1d1d4e;" d="M90.461,40.316c-2.404,1.066-4.99,1.787-7.702,2.109c2.769-1.659,4.894-4.284,5.897-7.417
+			                        c-2.591,1.537-5.462,2.652-8.515,3.253c-2.446-2.605-5.931-4.233-9.79-4.233c-7.404,0-13.409,6.005-13.409,13.409
+			                        c0,1.051,0.119,2.074,0.349,3.056c-11.144-0.559-21.025-5.897-27.639-14.012c-1.154,1.98-1.816,4.285-1.816,6.742
+			                        c0,4.651,2.369,8.757,5.965,11.161c-2.197-0.069-4.266-0.672-6.073-1.679c-0.001,0.057-0.001,0.114-0.001,0.17
+			                        c0,6.497,4.624,11.916,10.757,13.147c-1.124,0.308-2.311,0.471-3.532,0.471c-0.866,0-1.705-0.083-2.523-0.239
+			                        c1.706,5.326,6.657,9.203,12.526,9.312c-4.59,3.597-10.371,5.74-16.655,5.74c-1.08,0-2.15-0.063-3.197-0.188
+			                        c5.931,3.806,12.981,6.025,20.553,6.025c24.664,0,38.152-20.432,38.152-38.153c0-0.581-0.013-1.16-0.039-1.734
+			                        C86.391,45.366,88.664,43.005,90.461,40.316L90.461,40.316z"/>
+	                                </g>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66s-65.21,145.659-145.66,145.659S0,226.1,0,145.66
+		                            S65.21,0,145.659,0z"/>
+	                                <path style="fill:#28282850;" d="M82.079,200.136h27.275v-90.91H82.079V200.136z M188.338,106.077
+		                            c-13.237,0-25.081,4.834-33.483,15.504v-12.654H127.48v91.21h27.375v-49.324c0-10.424,9.55-20.593,21.512-20.593
+		                            s14.912,10.169,14.912,20.338v49.57h27.275v-51.6C218.553,112.686,201.584,106.077,188.338,106.077z M95.589,100.141
+		                            c7.538,0,13.656-6.118,13.656-13.656S103.127,72.83,95.589,72.83s-13.656,6.118-13.656,13.656S88.051,100.141,95.589,100.141z"/>
+                                    </g>
+
+                                    </svg>
+
+                                </div>
+                                <div class="social">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                viewBox="0 0 291.32 291.32" style="enable-background:new 0 0 291.32 291.32;" xml:space="preserve">
+                                    <g>
+	                                <path style="fill:white;" d="M145.66,0c80.113,0,145.66,65.547,145.66,145.66s-65.547,145.66-145.66,145.66S0,225.772,0,145.66
+		                            S65.547,0,145.66,0z"/>
+	                                <g>
+		                            <polygon style="fill:rgba(54, 54, 54, 0.311);" points="219.4,121.079 219.4,137.466 235.786,137.466 235.786,153.853 219.4,153.853 219.4,170.24 
+			                        203.013,170.24 203.013,153.853 186.626,153.853 186.626,137.466 203.013,137.466 203.013,121.079 		"/>
+		                            <path style="fill:#3434344a;" d="M71.919,186.626c-21.849-21.849-21.849-60.085,0.91-81.933
+			                        c16.387-16.387,40.056-20.028,60.995-11.835l8.193,4.552l9.104,6.373l-14.566,14.566l-5.462-3.641
+			                        c-12.745-8.193-30.953-6.373-42.787,5.462c-13.656,13.656-14.566,38.236,0,52.802c13.656,14.566,38.236,14.566,50.981,0
+			                        c3.641-3.641,7.283-9.104,8.193-14.566v-1.821h-32.773v-18.207h51.891l0.91,4.552v12.745c-0.91,11.835-5.462,23.67-13.656,31.863
+			                        C132.004,208.475,93.768,208.475,71.919,186.626z"/>
+	                                </g>
+                                    </g>
+
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </article>
+
+    <div id="goSponsors" class="sponsor">
+        <div class="sponsor-container">
+            <div class="sponsor-container-info">
+                <h1>Sponsor our Event!</h1>
+                <p>If you want to help us making this event lively and successful, help us by sponsoring our event! This will help us bring in more people, have better livesteaming equipment, maybe even our own chef! You can also sponsor us by giving away free swag at the event!</p>
+                <p>Here's who have sponsored us already.</p>
+                <div class="sponsor-img">
+                    <svg class="sponsor-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                viewBox="0 0 299.215 299.215" style="enable-background:new 0 0 299.215 299.215;" xml:space="preserve">
+                    <g id="XMLID_106_">
+	                <path id="XMLID_107_" d="M22.347,0c-2.75,0-4.799,2.241-4.555,4.98l23.184,260.047c0.244,2.739,2.611,5.582,5.262,6.318
+		            l98.381,27.316c2.65,0.736,6.986,0.736,9.637,0.002l98.68-27.361c2.65-0.735,5.02-3.578,5.264-6.316L281.422,4.98
+		            c0.246-2.739-1.805-4.98-4.555-4.98H22.347z M232.049,59.641c-0.219,2.443-0.598,6.684-0.842,9.423l-0.611,6.823
+		            c-0.246,2.738-0.596,6.654-0.781,8.701c-0.184,2.048-0.359,3.723-0.391,3.723c-0.031,0-2.307,0-5.057,0h-69.76
+		            c-2.75,0-5.023,0-5.053,0s-2.305,0-5.055,0h-36.74c-2.75,0-4.799,2.241-4.555,4.98l2.143,23.955c0.244,2.738,2.695,4.98,5.445,4.98
+		            H144.5c2.75,0,5.025,0,5.055,0s2.303,0,5.053,0h57.939c2.75,0,7.006,0,9.457,0c2.449,0,4.273,1.999,4.051,4.442
+		            c-0.223,2.443-0.604,6.685-0.848,9.423l-6.891,77.228c-0.246,2.739-0.557,6.238-0.691,7.776c-0.137,1.537-2.416,3.396-5.066,4.131
+		            l-58.133,16.119c-2.65,0.734-4.852,1.342-4.893,1.351c-0.041,0.009-2.242-0.586-4.893-1.321l-58.195-16.148
+		            c-2.65-0.735-5.018-3.578-5.262-6.317l-3.746-42.045c-0.244-2.739,1.807-4.98,4.557-4.98h5.311c2.75,0,7.25,0,10,0h7.92
+		            c2.75,0,5.199,2.241,5.445,4.98l1.469,16.459c0.244,2.739,2.615,5.566,5.271,6.283l27.221,7.351
+		            c2.654,0.717,4.836,1.304,4.848,1.304s2.193-0.588,4.848-1.305l27.27-7.369c2.654-0.717,5.027-3.545,5.273-6.283l2.957-32.976
+		            c0.246-2.739-1.803-4.98-4.553-4.98h-30.666c-2.75,0-5.023,0-5.053,0s-2.305,0-5.055,0H80.511c-2.75,0-5.199-2.242-5.443-4.98
+		            l-7.256-81.306c-0.244-2.739-0.623-6.979-0.842-9.423c-0.217-2.443,1.854-4.442,4.604-4.442H144.5c2.75,0,5.025,0,5.055,0
+		            s2.303,0,5.053,0h72.838C230.195,55.198,232.267,57.197,232.049,59.641z"/>
+                    </g>
+
+                    </svg>
+                    <svg class="sponsor-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+	                <g>
+		            <path d="M487.915,3.52C485.888,1.28,483.008,0,480,0H32c-3.029,0-5.888,1.28-7.915,3.52c-2.027,2.219-3.008,5.205-2.709,8.213
+			        L64.043,438.4c0.405,4.16,3.243,7.723,7.232,9.045l192,64c1.088,0.384,2.24,0.555,3.371,0.555c1.28,0,2.539-0.235,3.776-0.683
+			        l170.667-64c3.797-1.408,6.464-4.885,6.869-8.917l42.667-426.667C490.923,8.747,489.941,5.739,487.915,3.52z M427.349,429.675
+			        l-160.917,60.352L84.565,429.397L43.755,21.333h424.427L427.349,429.675z"/>
+	                </g>
+                    </g>
+                    <g>
+	                <g>
+		            <path d="M402.816,110.485c-2.027-2.411-5.035-3.797-8.171-3.797h-256c-5.888,0-10.667,4.779-10.667,10.667
+			        s4.779,10.667,10.667,10.667h243.307l-14.827,85.312H149.312c-5.888,0-10.667,4.779-10.667,10.667s4.779,10.667,10.667,10.667
+			        h214.101l-20.907,120.171l-76.075,28.523l-86.549-28.864l-9.451-47.253c-1.131-5.76-6.699-9.536-12.544-8.363
+			        c-5.76,1.152-9.515,6.763-8.363,12.544l10.667,53.333c0.747,3.755,3.456,6.805,7.083,8.021l96,32
+			        c1.088,0.384,2.24,0.555,3.371,0.555c1.28,0,2.539-0.235,3.755-0.661l85.333-32c3.541-1.344,6.123-4.437,6.763-8.171
+			        l42.667-245.333C405.696,116.075,404.843,112.896,402.816,110.485z"/>
+	                </g>
+                    </g>
+
+                    </svg>
+
+                    <svg class="sponsor-svg" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0H0V15H15V0ZM8 8C8 6.89543 8.89543 6 10 6H11.1667C12.1792 6 13 6.82081 13 7.83333V8H12V7.83333C12 7.3731 11.6269 7 11.1667 7H10C9.44772 7 9 7.44772 9 8C9 8.55228 9.44772 9 10 9H11C12.1046 9 13 9.89543 13 11C13 12.1046 12.1046 13 11 13H10C8.89543 13 8 12.1046 8 11H9C9 11.5523 9.44772 12 10 12H11C11.5523 12 12 11.5523 12 11C12 10.4477 11.5523 10 11 10H10C8.89543 10 8 9.10457 8 8ZM6 6V11C6 11.5523 5.55228 12 5 12C4.44772 12 4 11.5523 4 11H3C3 12.1046 3.89543 13 5 13C6.10457 13 7 12.1046 7 11V6H6Z" />
+                    </svg>
+                        
+                </div>
+                <div class="sponsor-button">
+                    <button>Sponsor Us</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="goPastEvents" class="pastEvents">
+        <div class="pastEvents-container">
+            <div class="pastEvents-info">
+                <h1>Past Events</h1>
+                <p>Check out the photos of our previous events where we rocked with a lot of Famous and enthusiatic authors! We're always planning to make our future events feel fresh and fun to be at. :)</p>
+            </div>
+            <div class="pastEvents-row">
+                <div class="pastEvents-col-1">
+
+                </div>
+                <div class="pastEvents-col-2">
+
+                </div>
+            </div>
+            <div class="pastEvents-row">
+                <div class="pastEvents-col-3">
+
+                </div>
+                <div class="pastEvents-col-4">
+                    
+                </div>
+            </div>
+            <div class="pastEvents-button-container">
+                <button class="view-more">View More</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="goContact" class="footer-container">
+            <div class="footer-col-1">
+                <div>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <circle style="fill:#88C5CC;" cx="256" cy="256" r="256"/>
+                    <path style="fill:#CCCCCC;" d="M100,396c-15.436,0-28-12.564-28-28V140c0-15.436,8.564-24,24-24h316c15.436,0,28,12.564,28,28v224
+	                c0,15.436-12.564,28-28,28H100z"/>
+                    <circle style="fill:#CC584C;" cx="95.812" cy="140" r="8"/>
+                    <circle style="fill:#FFD464;" cx="119.812" cy="140" r="8"/>
+                    <circle style="fill:#198058;" cx="143.812" cy="140" r="8"/>
+                    <g>
+	                <path style="fill:#F5F5F5;" d="M403.812,144c0,2.2-1.8,4-4,4h-232c-2.2,0-4-1.8-4-4v-8c0-2.2,1.8-4,4-4h232c2.2,0,4,1.8,4,4V144z"
+		            />
+	                <path style="fill:#F5F5F5;" d="M424,372c0,4.4-3.6,8-8,8H96c-4.4,0-8-3.6-8-8V172c0-4.4,3.6-8,8-8h320c4.4,0,8,3.6,8,8V372z"/>
+                    </g>
+                    <g>
+	                <path style="fill:#406A80;" d="M160,356c0,4.4-3.6,8-8,8h-40c-4.4,0-8-3.6-8-8V188c0-4.4,3.6-8,8-8h40c4.4,0,8,3.6,8,8V356z"/>
+	                <path style="fill:#406A80;" d="M400,180c4.4,0,8,3.6,8,8v40c0,4.408-3.6,8-8,8H184c-4.4,0-8-3.592-8-8v-40c0-4.4,3.6-8,8-8H400z"/>
+                    </g>
+                    <g>
+	                <rect x="176" y="248" style="fill:#B3B3B3;" width="232" height="8"/>
+	                <rect x="176" y="260" style="fill:#B3B3B3;" width="232" height="8"/>
+	                <rect x="176" y="272" style="fill:#B3B3B3;" width="232" height="8"/>
+	                <rect x="176" y="284" style="fill:#B3B3B3;" width="52" height="52"/>
+                    </g>
+                    <rect x="236" y="284" style="fill:#E16B5A;" width="52" height="52"/>
+                    <g>
+	                <rect x="296" y="284" style="fill:#B3B3B3;" width="52" height="52"/>
+	                <rect x="356" y="284" style="fill:#B3B3B3;" width="52" height="52"/>
+                    </g>
+                    </svg>
+                </div>
+                <div class="footer-col-1-info">
+                    <p>Lorem ipsum Avenue, 420/2 elm street, Melborne, Sydney - 2122, Kingdom of Australia</p>
+                </div>
+                <div class="footer-col-1-button">
+                    <button>View Map</button>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <input class="footer-input1" type="text" placeholder="E-mail">
+                <input class="footer-input2" type="text" placeholder="Type your message">
+                <button class="send-message-button">Send Message</button>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="footer-bottom">
+        <div class="footer-social">
+            <div class="facebook">
+                <svg class="footer-social-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	            viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                <g>
+	            <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+		        S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"/>
+	            <path style="fill:#54E346;" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055
+		        v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366
+		        C154.791,104.556,158.341,100.277,163.394,100.277z"/>
+                </g>
+
+                </svg>
+            </div>
+            <div class="facebook">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	            viewBox="0 0 112.197 112.197" style="enable-background:new 0 0 112.197 112.197;" xml:space="preserve">
+                <g>
+	            <circle style="fill:white;" cx="56.099" cy="56.098" r="56.098"/>
+	            <g>
+		        <path style="fill:#54E346;" d="M90.461,40.316c-2.404,1.066-4.99,1.787-7.702,2.109c2.769-1.659,4.894-4.284,5.897-7.417
+			    c-2.591,1.537-5.462,2.652-8.515,3.253c-2.446-2.605-5.931-4.233-9.79-4.233c-7.404,0-13.409,6.005-13.409,13.409
+			    c0,1.051,0.119,2.074,0.349,3.056c-11.144-0.559-21.025-5.897-27.639-14.012c-1.154,1.98-1.816,4.285-1.816,6.742
+			    c0,4.651,2.369,8.757,5.965,11.161c-2.197-0.069-4.266-0.672-6.073-1.679c-0.001,0.057-0.001,0.114-0.001,0.17
+			    c0,6.497,4.624,11.916,10.757,13.147c-1.124,0.308-2.311,0.471-3.532,0.471c-0.866,0-1.705-0.083-2.523-0.239
+			    c1.706,5.326,6.657,9.203,12.526,9.312c-4.59,3.597-10.371,5.74-16.655,5.74c-1.08,0-2.15-0.063-3.197-0.188
+			    c5.931,3.806,12.981,6.025,20.553,6.025c24.664,0,38.152-20.432,38.152-38.153c0-0.581-0.013-1.16-0.039-1.734
+			    C86.391,45.366,88.664,43.005,90.461,40.316L90.461,40.316z"/>
+	            </g>
+                </g>
+
+                </svg>
+            </div>
+            <div class="facebook">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	            viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                <g>
+	            <path style="fill:white;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66s-65.21,145.659-145.66,145.659S0,226.1,0,145.66
+		        S65.21,0,145.659,0z"/>
+	            <path style="fill:#54E346;" d="M82.079,200.136h27.275v-90.91H82.079V200.136z M188.338,106.077
+		        c-13.237,0-25.081,4.834-33.483,15.504v-12.654H127.48v91.21h27.375v-49.324c0-10.424,9.55-20.593,21.512-20.593
+		        s14.912,10.169,14.912,20.338v49.57h27.275v-51.6C218.553,112.686,201.584,106.077,188.338,106.077z M95.589,100.141
+		        c7.538,0,13.656-6.118,13.656-13.656S103.127,72.83,95.589,72.83s-13.656,6.118-13.656,13.656S88.051,100.141,95.589,100.141z"/>
+                </g>
+
+                </svg>
+            </div>
+            <div class="facebook">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	            viewBox="0 0 291.32 291.32" style="enable-background:new 0 0 291.32 291.32;" xml:space="preserve">
+                <g>
+	            <path style="fill:white;" d="M145.66,0c80.113,0,145.66,65.547,145.66,145.66s-65.547,145.66-145.66,145.66S0,225.772,0,145.66
+		        S65.547,0,145.66,0z"/>
+	            <g>
+		        <polygon style="fill:#54E346;" points="219.4,121.079 219.4,137.466 235.786,137.466 235.786,153.853 219.4,153.853 219.4,170.24 
+			    203.013,170.24 203.013,153.853 186.626,153.853 186.626,137.466 203.013,137.466 203.013,121.079 		"/>
+		        <path style="fill:#54E346;" d="M71.919,186.626c-21.849-21.849-21.849-60.085,0.91-81.933
+			    c16.387-16.387,40.056-20.028,60.995-11.835l8.193,4.552l9.104,6.373l-14.566,14.566l-5.462-3.641
+			    c-12.745-8.193-30.953-6.373-42.787,5.462c-13.656,13.656-14.566,38.236,0,52.802c13.656,14.566,38.236,14.566,50.981,0
+			    c3.641-3.641,7.283-9.104,8.193-14.566v-1.821h-32.773v-18.207h51.891l0.91,4.552v12.745c-0.91,11.835-5.462,23.67-13.656,31.863
+			    C132.004,208.475,93.768,208.475,71.919,186.626z"/>
+	            </g>
+                </g>
+
+                </svg>
+            </div>
+            <div class="facebook">
+                <svg style="fill: white;" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6 9.6-4.298 9.6-9.6S15.302.4 10 .4zm2.577 13.741a5.508 5.508 0 0 1-1.066.395 4.543 4.543 0 0 1-1.031.113c-.42 0-.791-.055-1.114-.162a2.373 2.373 0 0 1-.826-.459 1.651 1.651 0 0 1-.474-.633c-.088-.225-.132-.549-.132-.973V9.16H6.918V7.846c.359-.119.67-.289.927-.512.257-.221.464-.486.619-.797.156-.31.263-.707.322-1.185h1.307v2.35h2.18V9.16h-2.18v2.385c0 .539.028.885.085 1.037a.7.7 0 0 0 .315.367c.204.123.437.185.697.185.466 0 .928-.154 1.388-.461v1.468h-.001z"/></svg>
+                <div class="back-to-top">
+                    <a href="#html">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 487 487" style="enable-background:new 0 0 487 487;" xml:space="preserve">
+                        <g>
+                        <path d="M397.7,376.1c20.4,20.4,53.6,20.4,74,0s20.4-53.6,0-74L280.5,110.9c-20.4-20.4-53.6-20.4-74,0L15.3,302.1
+                        c-20.4,20.4-20.4,53.6,0,74s53.6,20.4,74,0l154.2-154.2L397.7,376.1z"/>
+                        </g>
+            
+                        </svg>
+                    </a>
+                    
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="footer-bottom-info">
+            <p>Hope we see you at the event! All Rights Reserved Envato Bangladesh © 2015</p>
+        </div>
+    </div>
+
+    
+</body>
+
+<script src="./app.js"></script>
+</html>
