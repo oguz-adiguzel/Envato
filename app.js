@@ -7,8 +7,6 @@ function myFunction() {
     }
 }
 
-
-
 function accordion() {
     let buttons = document.getElementsByClassName("accordion-button");
     let i;
@@ -36,14 +34,11 @@ accordion();
 
 function countdown() {
 
-
     let countDownDate = new Date("2022, 7, 30").getTime();
 
     let x = setInterval(function () {
 
-
         let now = new Date().getTime();
-
 
         let distance = countDownDate - now;
 
@@ -66,8 +61,8 @@ function countdown() {
     }, 1000);
 
 }
-countdown()
 
+countdown()
 
 let nameSurname = document.getElementById('nameSurname');
 let email = document.getElementById('email');

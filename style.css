@@ -2,7 +2,11 @@ html {
     scroll-behavior: smooth;
   }
 
-  
+#demo{
+    color: white;
+    font-size: 5rem;
+} 
+
 :root{
     --yellowColor:#54E346;
     --textColor:rgb(94, 92, 92);
@@ -31,8 +35,6 @@ nav{
     position: relative;
     display: flex;
     justify-content:start;
-   
-    
 }
 
 .container-nav{
@@ -734,6 +736,9 @@ footer input{
     width: 2.5rem;
     animation: back-to-top 2s linear infinite;
     margin-left: 20rem;
+    position: fixed;
+    bottom: 5rem;
+    z-index: 9999;
 }
 @keyframes back-to-top {  
     50% { opacity: 0; }
