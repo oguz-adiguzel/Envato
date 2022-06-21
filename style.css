@@ -735,7 +735,7 @@ footer input{
 .back-to-top{
     width: 2.5rem;
     animation: back-to-top 2s linear infinite;
-    margin-left: 20rem;
+    margin-left: 35rem;
     position: fixed;
     bottom: 5rem;
     z-index: 9999;
