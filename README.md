@@ -7,9 +7,10 @@ https://www.behance.net/gallery/26479637/Meetup-Event-Landing-Page-%28Free-Downl
 <img src="img/envato.png" width="60%">
 
 ## Languages and Libraries
-[HTML]() <br>
-[CSS]() <br>
-[Javascript]() <br>
+
+<li>HTML
+<li>CSS
+<li>Javascript
 
 ## Contact
 
