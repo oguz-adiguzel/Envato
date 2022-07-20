@@ -201,7 +201,6 @@ main{
 }
 .card{
     width: 25%;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1409,3 +1408,14 @@ footer input{
     top: 0;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
