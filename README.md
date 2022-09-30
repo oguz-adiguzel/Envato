@@ -17,3 +17,5 @@ https://www.behance.net/gallery/26479637/Meetup-Event-Landing-Page-%28Free-Downl
 Oğuz Adıgüzel [Linkedin](https://www.linkedin.com/in/oğuz-adıgüzel-2672a8242) - oguz_adiguzel@outlook.com
 
 Project Link : [https://github.com/oguz-adiguzel/Envato](https://github.com/oguz-adiguzel/Envato)
+
+Vercel Link : [https://envato-one.vercel.app](https://envato-one.vercel.app)
