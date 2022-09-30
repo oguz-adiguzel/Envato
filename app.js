@@ -34,7 +34,8 @@ accordion();
 
 function countdown() {
 
-    let countDownDate = new Date("2022, 10, 30").getTime();
+    let countDownDate = new Date().getTime();
+    countDownDate = countDownDate + 864000000
 
     let x = setInterval(function () {
 
